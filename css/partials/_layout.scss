@@ -35,3 +35,29 @@ $container-s: 540px;
     }
   }
 }
+
+.container{
+  max-width: $container-xl;
+  margin: 0 auto;
+
+  padding: 96px 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+
+  @include responsive(s){
+    flex-direction: column;
+
+    padding: 32px 18px;
+  }
+}
+
+@mixin flexItem($positionX, $positionY, $direction: row) {
+  display: flex;
+  justify-content: $positionX;
+  align-items: $positionY;
+  flex-direction: $direction;
+}
