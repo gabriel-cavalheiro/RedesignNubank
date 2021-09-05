@@ -85,6 +85,10 @@ $container-s: 540px;
   flex-wrap: wrap;
 }
 
+.flex-column{
+  flex-direction: column;
+}
+
 .flex-item-1{
   flex: 1 1 360px;
 }
@@ -157,5 +161,25 @@ $container-s: 540px;
 
   @include responsive(xl){
     width: 100%;
+  }
+}
+
+.list-item{
+  list-style: none;
+  position: relative;
+
+  padding: 8px 8px 8px 72px;
+  margin-bottom: 48px;
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -8px;
+
+    display: block;
+
+    width: 64px;
+    height: 64px;
   }
 }
