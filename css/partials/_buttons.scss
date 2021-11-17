@@ -10,6 +10,7 @@ a{
 }
 
 .btn{
+    display: block;
     background: linear-gradient(220.94deg, $secondary-normal 14.43%, $primary-normal 85.28%);
     border-radius: 16px;
     padding: 12px 31px;
@@ -68,5 +69,15 @@ a{
         &::after{
             width: 100%;  
         }
+    }
+}
+
+.button-app{
+    transition: 0.5 ease;
+    &:hover{
+        filter: drop-shadow(0px, 51px, 80px rgba(169, 80, 196, 0.8))
+        drop-shadow(0px, 15.375px, 24.1177px rgba(169, 80, 196, 0.0521271))
+        drop-shadow(0px, 6.38599px, 10.0172px rgba(169, 80, 196, 0.04))
+        drop-shadow(0px, 2.30969px, 3.62304px rgba(169, 80, 196, 0.02782));
     }
 }

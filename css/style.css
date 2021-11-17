@@ -270,6 +270,28 @@
   }
 }
 
+.bg-invite {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.svg-invite {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 960px) {
+  .svg-invite {
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
 h1 {
   color: #232224;
   font-family: "Sora", sans-serif;
@@ -403,6 +425,7 @@ a:hover {
 }
 
 .btn {
+  display: block;
   background: linear-gradient(220.94deg, #a950c4 14.43%, #82269e 85.28%);
   border-radius: 16px;
   padding: 12px 31px;
@@ -454,6 +477,16 @@ a:hover {
 
 .link:hover::after {
   width: 100%;
+}
+
+.button-app {
+  -webkit-transition: 0.5 ease;
+  transition: 0.5 ease;
+}
+
+.button-app:hover {
+  -webkit-filter: drop-shadow(0px, 51px, 80px rgba(169, 80, 196, 0.8)) drop-shadow(0px, 15.375px, 24.1177px rgba(169, 80, 196, 0.0521271)) drop-shadow(0px, 6.38599px, 10.0172px rgba(169, 80, 196, 0.04)) drop-shadow(0px, 2.30969px, 3.62304px rgba(169, 80, 196, 0.02782));
+          filter: drop-shadow(0px, 51px, 80px rgba(169, 80, 196, 0.8)) drop-shadow(0px, 15.375px, 24.1177px rgba(169, 80, 196, 0.0521271)) drop-shadow(0px, 6.38599px, 10.0172px rgba(169, 80, 196, 0.04)) drop-shadow(0px, 2.30969px, 3.62304px rgba(169, 80, 196, 0.02782));
 }
 
 .s-0 {
@@ -1892,6 +1925,67 @@ ul .icons {
   }
   100% {
     fill-opacity: 0.4;
+  }
+}
+
+.fignu4-letter-u, .fignu4-letter-n {
+  -webkit-animation: fig4-letter 4s ease infinite alternate;
+          animation: fig4-letter 4s ease infinite alternate;
+  stroke-width: 4;
+  stroke-dasharray: 1 400;
+  stroke-opacity: 0;
+}
+
+@-webkit-keyframes fig4-letter {
+  0% {
+    stroke-width: 4;
+    stroke-dasharray: 1 400;
+    stroke-opacity: 0;
+  }
+  60%, 100% {
+    stroke-width: 4;
+    stroke-dasharray: 400 0;
+    stroke-opacity: 1;
+  }
+}
+
+@keyframes fig4-letter {
+  0% {
+    stroke-width: 4;
+    stroke-dasharray: 1 400;
+    stroke-opacity: 0;
+  }
+  60%, 100% {
+    stroke-width: 4;
+    stroke-dasharray: 400 0;
+    stroke-opacity: 1;
+  }
+}
+
+.fignu5-ball1 {
+  -webkit-animation: translate-ball 4s ease infinite alternate;
+          animation: translate-ball 4s ease infinite alternate;
+}
+
+@-webkit-keyframes translate-ball {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(200px, -100px, 0);
+            transform: translate3d(200px, -100px, 0);
+  }
+}
+
+@keyframes translate-ball {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(200px, -100px, 0);
+            transform: translate3d(200px, -100px, 0);
   }
 }
 /*# sourceMappingURL=style.css.map */
