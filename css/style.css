@@ -1481,7 +1481,7 @@ ul .icons {
           transform-origin: center center;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  background-image: url("../../svg/nubank.svg");
+  background-image: url("../../svg/nucard-front.svg");
   z-index: -1;
   -webkit-animation: flip-card 12s linear infinite alternate, change-bg-card 12s linear infinite alternate;
           animation: flip-card 12s linear infinite alternate, change-bg-card 12s linear infinite alternate;
@@ -1527,19 +1527,19 @@ ul .icons {
 
 @-webkit-keyframes change-bg-card {
   0%, 49% {
-    background-image: url("../../svg/nubank.svg");
+    background-image: url("../../svg/nucard-front.svg");
   }
   50%, 100% {
-    background-image: url("../../svg/nubank-verse.svg");
+    background-image: url("../../svg/nucard-verse.svg");
   }
 }
 
 @keyframes change-bg-card {
   0%, 49% {
-    background-image: url("../../svg/nubank.svg");
+    background-image: url("../../svg/nucard-front.svg");
   }
   50%, 100% {
-    background-image: url("../../svg/nubank-verse.svg");
+    background-image: url("../../svg/nucard-verse.svg");
   }
 }
 
@@ -2020,8 +2020,8 @@ ul .icons {
 }
 
 .fignu5-ball1 {
-  -webkit-animation: translate-ball 4s ease infinite alternate;
-          animation: translate-ball 4s ease infinite alternate;
+  -webkit-animation: translate-ball 6s ease infinite alternate;
+          animation: translate-ball 6s ease infinite alternate;
 }
 
 @-webkit-keyframes translate-ball {
@@ -2043,6 +2043,65 @@ ul .icons {
   100% {
     -webkit-transform: translate3d(200px, -100px, 0);
             transform: translate3d(200px, -100px, 0);
+  }
+}
+
+.fignu5-ball2 {
+  -webkit-animation: translate-ball2 8s ease 1s infinite alternate;
+          animation: translate-ball2 8s ease 1s infinite alternate;
+}
+
+.fignu5-ball3 {
+  -webkit-animation: translate-ball3 6s ease 2s infinite alternate;
+          animation: translate-ball3 6s ease 2s infinite alternate;
+}
+
+.fignu5-ball4 {
+  -webkit-animation: translate-ball2 10s ease 3s infinite alternate;
+          animation: translate-ball2 10s ease 3s infinite alternate;
+}
+
+@-webkit-keyframes translate-ball2 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-60px, 70px, 0);
+            transform: translate3d(-60px, 70px, 0);
+  }
+}
+
+@keyframes translate-ball2 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-60px, 70px, 0);
+            transform: translate3d(-60px, 70px, 0);
+  }
+}
+
+@-webkit-keyframes translate-ball3 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-85px, 90px, 0);
+            transform: translate3d(-85px, 90px, 0);
+  }
+}
+
+@keyframes translate-ball3 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-85px, 90px, 0);
+            transform: translate3d(-85px, 90px, 0);
   }
 }
 /*# sourceMappingURL=style.css.map */

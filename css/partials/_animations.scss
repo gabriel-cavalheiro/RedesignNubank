@@ -17,10 +17,11 @@ $heigth-card: 0.64 * $width-card;
 
     transform-origin: center center;
     transform-style: preserve-3d;
-    background-image: url("../../svg/nubank.svg");
+    background-image: url("../../svg/nucard-front.svg");
     z-index: -1;
     animation: flip-card 12s linear infinite alternate,
     change-bg-card 12s linear infinite alternate ;  
+
 }
 
 @keyframes flip-card{
@@ -43,10 +44,10 @@ $heigth-card: 0.64 * $width-card;
 
 @keyframes change-bg-card{
     0%,49%{
-        background-image: url("../../svg/nubank.svg");
+        background-image: url("../../svg/nucard-front.svg");
     }
     50%,100%{
-        background-image: url("../../svg/nubank-verse.svg");
+        background-image: url("../../svg/nucard-verse.svg");
     }
 }
 
@@ -58,6 +59,7 @@ $heigth-card: 0.64 * $width-card;
     z-index: 200;
 
     animation: icons-hero 7s ease 0.5s infinite alternate;
+
 }
 
 .icon-contactless-hero{
@@ -73,6 +75,7 @@ $heigth-card: 0.64 * $width-card;
     }
 
     animation: icons-hero 7s ease 1s infinite alternate;
+
 }
 
 .icon-mobile-hero{
@@ -88,6 +91,7 @@ $heigth-card: 0.64 * $width-card;
     }
 
     animation: icons-hero 7s ease 2.5s infinite alternate;
+
 }
 
 @keyframes icons-hero{
@@ -361,7 +365,19 @@ $heigth-card: 0.64 * $width-card;
 }
 
 .fignu5-ball1{
-    animation: translate-ball 4s ease infinite alternate;
+    animation: translate-ball 6s ease infinite alternate;
+}
+
+.fignu5-ball2{
+    animation: translate-ball2 8s ease 1s infinite alternate;
+}
+
+.fignu5-ball3{
+    animation: translate-ball3 6s ease 2s infinite alternate;
+}
+
+.fignu5-ball4{
+    animation: translate-ball2 10s ease 3s infinite alternate;
 }
 
 @keyframes translate-ball{
@@ -370,5 +386,23 @@ $heigth-card: 0.64 * $width-card;
     }
     100%{
         transform: translate3d(200px,-100px,0);
+    }
+}
+
+@keyframes translate-ball2{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(-60px,70px,0);
+    }
+}
+
+@keyframes translate-ball3{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(-85px,90px,0);
     }
 }
