@@ -1,6 +1,6 @@
 <h1 align="center">Redesign Nubank</h1>
 
-<video src="./video/Project Nubank - Google Chrome 2021-11-18 12-44-53.mp4" autoplay></video>
+<img src="./img/hero.png" max-width="1200" align="center">
 
 
 <p align="center">
