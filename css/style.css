@@ -2024,6 +2024,21 @@ ul .icons {
           animation: translate-ball 6s ease infinite alternate;
 }
 
+.fignu5-ball2 {
+  -webkit-animation: translate-ball2 8s ease 1s infinite alternate;
+          animation: translate-ball2 8s ease 1s infinite alternate;
+}
+
+.fignu5-ball3 {
+  -webkit-animation: translate-ball3 6s ease 2s infinite alternate;
+          animation: translate-ball3 6s ease 2s infinite alternate;
+}
+
+.fignu5-ball4 {
+  -webkit-animation: translate-ball2 10s ease 3s infinite alternate;
+          animation: translate-ball2 10s ease 3s infinite alternate;
+}
+
 @-webkit-keyframes translate-ball {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -2044,21 +2059,6 @@ ul .icons {
     -webkit-transform: translate3d(200px, -100px, 0);
             transform: translate3d(200px, -100px, 0);
   }
-}
-
-.fignu5-ball2 {
-  -webkit-animation: translate-ball2 8s ease 1s infinite alternate;
-          animation: translate-ball2 8s ease 1s infinite alternate;
-}
-
-.fignu5-ball3 {
-  -webkit-animation: translate-ball3 6s ease 2s infinite alternate;
-          animation: translate-ball3 6s ease 2s infinite alternate;
-}
-
-.fignu5-ball4 {
-  -webkit-animation: translate-ball2 10s ease 3s infinite alternate;
-          animation: translate-ball2 10s ease 3s infinite alternate;
 }
 
 @-webkit-keyframes translate-ball2 {
